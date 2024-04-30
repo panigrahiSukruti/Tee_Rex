@@ -8,6 +8,7 @@ import { reducerFunc } from "./Context/Reducer";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 
 function App() {
+  // console.log()
   const [state, dispatch] = useReducer(reducerFunc, { cart: [] });
   return (
     <CartContext.Provider value={{ state, dispatch }}>
